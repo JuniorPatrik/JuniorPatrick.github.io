@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Encabezado */
+/* Encabezado */
+header.portada {
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido al final del contenedor (parte inferior) */
+    align-items: center; /* Centra el contenido horizontalmente */
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-bottom: 20px; /* Espaciado inferior */
+    overflow: hidden;
+}
+
+/* Contenido del header */
+header.portada .portada-content {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    padding: 20px 40px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    max-width: 600px; /* Limita el ancho del contenido */
+}
+
+/* Título */
+header.portada h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4b5320; /* Verde militar */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mayor contraste */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+/* Párrafos */
+header.portada p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: white;
+}
+
+/* Enlaces */
+header.portada a {
+    color: #d4af37; /* Dorado */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header.portada a:hover {
+    color: #f4d03f; /* Más brillo en el hover */
+    text-decoration: underline;
+}
+
+
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f9c74f;
+}
+
+/* Secciones */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #555;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 0.5rem;
+}
+
+p, ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Parallax */
+.parallax {
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+/* Galería */
+#gallery {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #f9c74f;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Pie de Página */
+footer.footer {
+    background-color: #4b5320; /* Verde militar */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer.footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+footer.footer a {
+    color: #d4af37; /* Dorado */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer.footer a:hover {
+    color: #f4d03f; /* Más brillo en el hover */
+    text-decoration: underline;
+}
+
